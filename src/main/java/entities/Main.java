@@ -92,6 +92,13 @@ public class Main {
 	    /* MOCK */
 	    
 	    //Emprunt
+	    try {
+		person.borrows(book);
+	    } catch (NotAvailableException e) {
+		System.out.println("Le livre séléctionné n'est plus disponible.");
+	    }
+	    
+	    
 	    ArrayList<Book> books = person.getLoans().get(LocalDate.now());
 	    books.add(book);
 	    person.getLoans().put(LocalDate.now(),books);

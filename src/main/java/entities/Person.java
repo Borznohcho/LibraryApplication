@@ -31,6 +31,9 @@ public class Person {
 	return null;
     }
     
+    public void emprunter(Book book) {
+	//TODO
+    }
 
 
 }

@@ -43,6 +43,7 @@ public class Main {
 
 		//Lecture du choix
 		choix = scan.nextInt();
+		scan.nextLine(); // Vider le tampon
 		
 		// Valider entrée utilisateur (entier compris entre 0-4)
 		if(choix < 0 && choix > 4) {
@@ -69,7 +70,6 @@ public class Main {
 	    
 	    //Demander le nom
 	    System.out.println("Quel est le nom du membre ?");
-	    scan.nextLine(); // Vider le tampon
 	    String nom = scan.nextLine();
 	   
 	    //Créer une personne
@@ -78,7 +78,28 @@ public class Main {
 	    
 	    //Ajouter à la library
 	    library.addPerson(p);
+	    break;
 	    
+	case 2:
+	    //TODO
+	case 3:
+	    /* MOCK */
+	    //Selection d'une Person person
+	    Person person = new Person();
+	    
+	    //Selection d'un Book book
+	    Book book = new Book();
+	    /* MOCK */
+	    
+	    //Emprunt
+	    ArrayList<Book> books = person.getLoans().get(LocalDate.now());
+	    books.add(book);
+	    person.getLoans().put(LocalDate.now(),books);
+	    
+	    break;
+	    
+	case 4:
+	    //TODO
 	    break;
 
 	default:

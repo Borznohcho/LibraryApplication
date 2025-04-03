@@ -26,6 +26,10 @@ public class Book {
     private boolean borrowable;
     private ArrayList<Person> borrowers = new ArrayList<>();
     
+    public Book(String title,String author,short totalPages) {
+	this(UUID.randomUUID(),title,author,totalPages,(byte)7,1,Language.FR,(short)1,true,new ArrayList<Person>());
+	
+    }
     
     public LocalDate computeReturnDate(){
 	// TODO

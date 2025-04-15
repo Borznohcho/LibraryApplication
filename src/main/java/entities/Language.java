@@ -1,7 +1,9 @@
 package entities;
 
-public enum Language {
-    
-    FR,NL,EN
 
+/**
+ * Enumération représentant les langues disponibles dans la bibliothèque.
+ */
+public enum Language {
+    FR, NL, EN
 }

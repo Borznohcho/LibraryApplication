@@ -41,7 +41,7 @@ public class FileWriterTest {
 		bw.close();
 	    }
 	} catch (IOException e) {
-	    // TODO Auto-generated catch block
+	    
 	    e.printStackTrace();
 	}
 	
